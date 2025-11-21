@@ -14,16 +14,6 @@ Gem::Specification.new do |s|
 
   s.files = `git ls-files`.split($/)
   s.require_paths = ["lib"]
-  s.metadata["default_lint_roller_plugin"] = "RuboCop::Discourse::Plugin"
-
-  s.add_runtime_dependency "activesupport", ">= 6.1"
-  s.add_runtime_dependency "rubocop", ">= 1.73.2"
-  s.add_runtime_dependency "rubocop-rspec", ">= 3.0.1"
-  s.add_runtime_dependency "rubocop-factory_bot", ">= 2.27.0"
-  s.add_runtime_dependency "rubocop-capybara", ">= 2.22.0"
-  s.add_runtime_dependency "rubocop-rails", ">= 2.30.3"
-  s.add_runtime_dependency "rubocop-rspec_rails", ">= 2.31.0"
-  s.add_runtime_dependency "lint_roller", ">= 1.1.0"
 
   s.add_development_dependency "rake", "~> 13.1.0"
   s.add_development_dependency "rspec", "~> 3.12.0"

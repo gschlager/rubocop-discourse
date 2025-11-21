@@ -1,6 +1,5 @@
 plugins:
   - rubocop-rspec
-  - rubocop-rspec_rails
 
 RSpec/AnyInstance:
   Enabled: false # To be decided
@@ -32,18 +31,6 @@ RSpec/ContextWording:
 
 RSpec/DescribeClass:
   Enabled: true
-  Exclude:
-    - "**/spec/features/**/*"
-    - "**/spec/requests/**/*"
-    - "**/spec/routing/**/*"
-    - "**/spec/system/**/*"
-    - "**/spec/views/**/*"
-    - "**/spec/initializers/**/*"
-    - "**/spec/integration/**/*"
-    - "**/spec/integrity/**/*"
-    - "**/spec/tasks/**/*"
-    - "**/spec/lib/freedom_patches/**/*"
-    - "**/spec/multisite/**/*"
 
 RSpec/DescribeMethod:
   Enabled: true
@@ -59,8 +46,6 @@ RSpec/DescribedClassModuleWrapping:
 
 RSpec/EmptyExampleGroup:
   Enabled: true
-  Exclude:
-    - "spec/requests/api/*"
 
 RSpec/EmptyLineAfterExample:
   Enabled: false # TODO
@@ -233,6 +218,3 @@ RSpec/Dialect:
     given: :let
     given!: :let!
     feature: :describe
-
-RSpecRails/HttpStatus:
-  Enabled: true
