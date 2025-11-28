@@ -1,0 +1,28 @@
+inherit_gem:
+  rubocop-discourse-base:
+    - config/rubocop-rspec.yml
+
+plugins:
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+RSpec/DescribeClass:
+  Exclude:
+    - "**/spec/features/**/*"
+    - "**/spec/requests/**/*"
+    - "**/spec/routing/**/*"
+    - "**/spec/system/**/*"
+    - "**/spec/views/**/*"
+    - "**/spec/initializers/**/*"
+    - "**/spec/integration/**/*"
+    - "**/spec/integrity/**/*"
+    - "**/spec/tasks/**/*"
+    - "**/spec/lib/freedom_patches/**/*"
+    - "**/spec/multisite/**/*"
+
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - "spec/requests/api/*"
+
+RSpecRails/HttpStatus:
+  Enabled: true

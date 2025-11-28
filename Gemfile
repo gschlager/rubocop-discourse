@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-# Specify dependencies in gemspec
-gemspec
+# Development dependencies for both gems
+gem "rake"
+gem "rspec"
 
-group :development, :test do
-  gem "syntax_tree"
-  gem "byebug"
-end
+# For testing both gems locally
+gemspec path: "rubocop-discourse-base"
+gemspec path: "rubocop-discourse"

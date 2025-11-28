@@ -1,0 +1,7 @@
+inherit_gem:
+  rubocop-discourse-base:
+    - default.yml
+
+inherit_from:
+  - ./stree-compat.yml
+  - ./config/default.yml

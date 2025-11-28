@@ -1,1 +1,2 @@
---require 'spec_helper'
+--default-path rubocop-discourse/spec
+--require ./rubocop-discourse/spec/spec_helper

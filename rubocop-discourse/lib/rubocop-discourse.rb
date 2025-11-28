@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "rubocop"
+require "rubocop-discourse-base"
 require "lint_roller"
 require "active_support"
 require "active_support/core_ext/string/inflections"

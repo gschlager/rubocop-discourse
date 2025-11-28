@@ -1,0 +1,8 @@
+inherit_from:
+  - ./rubocop-core.yml
+  - ./rubocop-rspec.yml
+
+AllCops:
+  TargetRubyVersion: "3.3"
+  SuggestExtensions: false
+  DisabledByDefault: true
